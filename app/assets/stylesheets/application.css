@@ -13,3 +13,90 @@
  *= require_tree .
  *= require_self
  */
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", sans-serif;
+  color: white;
+  background-color: #f5f5f5;
+}
+
+header {
+  background-color: #293d4f;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 78px;
+}
+
+.logo-container {
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.account-image {
+  background-image: url('profile.png');
+  height: 40px;
+  width: 42px;
+  background-size: cover;
+  margin: 10px;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  padding: 20px;
+  color: white;
+  position: relative;
+}
+.selected {
+  background-color: #13a3d4;
+}
+
+.selected::after {
+  content: '';
+  background-color: #007fb5;
+  height: 10px;
+  width: 100%;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
+
+.navbar {
+  display: inline-flex;
+}
+
+.main-container {
+  background-color: #f5f5f5;
+  min-height: 700px;
+}
+
+h4 {
+  color: #293d4f;
+  text-align: justify;
+  padding:15%;
+}
+.form {
+  display: flex;
+  justify-content: center;
+  padding-top: 20%;
+}
+h3 {
+  color: #13a3d4;
+  font-size: 14px;
+  text-align: center;
+}
+input {
+}
+
+.login-image {
+  background-image: url('login.png');
+  height: 159px;
+  width: 190px;
+  background-size: contain;
+  margin: 10px;
+  position: absolute;
+  top: 44px;
+  right: 0;
+}
