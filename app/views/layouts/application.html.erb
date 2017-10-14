@@ -11,8 +11,13 @@
   <body>
     <header>
       <div class='logo-container'>tryppr.</div>
+      <div class='navbar'>
+        <%= link_to "Search", root_path, class: "selected"  %>
+        <%= link_to "About", about_path  %>
+      </div>
       <div class='account-image'></div>
     </header>
+    <div class='login-image hidden'></div>
     <%= yield %>
   </body>
 </html>
