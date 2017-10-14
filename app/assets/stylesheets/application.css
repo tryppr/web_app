@@ -13,3 +13,30 @@
  *= require_tree .
  *= require_self
  */
+body {
+  margin: 0;
+}
+
+header {
+  background-color: #293d4f;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  margin: 2em;
+  color: white;
+}
+
+.account-image {
+  background-image: url('profile.png');
+  height: 40px;
+  width: 42px;
+  background-size: cover;
+  margin: 10px;
+}
