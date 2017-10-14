@@ -88,8 +88,14 @@ h3 {
   text-align: center;
 }
 input {
+  height: 30px;
+  width: 230px;
+  font-size: 15px;
+  text-indent: 10px;
 }
-
+.when {
+  width: 100px;
+}
 .login-image {
   background-image: url('login.png');
   height: 159px;
