@@ -18,6 +18,7 @@ body {
   font-family: "Helvetica Neue", sans-serif;
   color: white;
   background-color: #f5f5f5;
+  min-width: 500px;
 }
 
 header {
@@ -83,8 +84,9 @@ h4 {
   padding-top: 20%;
 }
 h3 {
-  color: #13a3d4;
-  font-size: 14px;
+  color: #007fb5;
+  font-size: 16px;
+  font-weight: 400;
   text-align: center;
 }
 input {
@@ -92,7 +94,10 @@ input {
   width: 230px;
   font-size: 15px;
   text-indent: 10px;
+  border: 1px solid #f98562;
+  margin-right: 1px;
 }
+
 .when {
   width: 100px;
 }
@@ -105,4 +110,19 @@ input {
   position: absolute;
   top: 44px;
   right: 0;
+}
+
+.go {
+  background-color: #13a3d4;
+  border: none;
+  border-radius: 2px;
+  width: 40px;
+  height: 100%;
+  text-indent: 0;
+  color: white;
+}
+ul {
+  background-color: #f98562;
+  width: 20%;
+  padding: 5%;
 }

@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   root 'welcome#index'
 
   get 'about' => 'welcome#about', as: 'about'
+  post 'map' => 'welcome#map', as: 'map'
 end
