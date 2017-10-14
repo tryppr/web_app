@@ -1,0 +1,2 @@
+class VisitingTime < ApplicationRecord
+end
