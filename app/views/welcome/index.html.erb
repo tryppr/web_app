@@ -1,7 +1,8 @@
 <div class='main-container'>
   <div class="form">
     <input type='text' placeholder="where..." class='where'/>
-    <input type='text' placeholder="when" class='when'/>
+    <input type='text' placeholder="when" id="datepicker" class='when'/>
+    <%= button_to "Go!", map_path, class: 'go'  %>
   </div>
-  <h3>The only Tryppr. you want to get</h3>
+  <h3>"The only <i>tryppr.</i> you want to get"</h3>
 </div>

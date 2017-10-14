@@ -4,7 +4,11 @@ class WelcomeController < ApplicationController
     render layout: 'application'
   end
 
-	def about
-		render layout: 'application'
-	end
+  def about
+    render layout: 'application'
+  end
+
+  def map
+    render layout: 'application'
+  end
 end
