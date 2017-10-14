@@ -5,16 +5,15 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-
 categories = Category.create( [
-                 { name: 'Shopping'},
+                 {name: 'Shopping'},
                  {name: 'Cultural'},
                  {name: 'Nightlife'}
                              ] )
 
 places = Place.create( [
                  { name: 'ALEXA', latitude: 52.520066, longitude: 13.415127, category_id: 1, indoor: true, price: 2 },
-								 { name: 'Boulevard Berlin', latitude: 52.462697, longitude: 13.325522, category_id: 1, indoor: true, price 3 },
+								 { name: 'Boulevard Berlin', latitude: 52.462697, longitude: 13.325522, category_id: 1, indoor: true, price: 3 },
 								 { name: 'Kufürstendamm', latitude: 52.503371, longitude: 13.330733, category_id: 1, indoor: false, price: 4 },
 								 { name: 'KdW', latitude: 52.502130, longitude: 13.341443, category_id: 1, indoor: true, price: 3 },
 								 { name: 'Unter den Linden', latitude: 52.516902, longitude: 13.389091, category_id: 1, indoor: false, price: 4 },
