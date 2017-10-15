@@ -55,4 +55,3 @@ places = Place.create( [
 	{ name: 'Naturkundemuseum', latitude: 52.529920, longitude: 13.379621, category_id: 3, indoor: true, price: 1, duration: 180, visiting_time_id: 6 },
 	{ name: 'Siegessäule', latitude: 52.514519, longitude: 13.350116, category_id: 3, indoor: false, price: 1, duration: 60, visiting_time_id: 1 },
 ] )
-

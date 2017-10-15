@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171014131654) do
+ActiveRecord::Schema.define(version: 20171014170641) do
 
   create_table "categories", force: :cascade do |t|
     t.string "name"
@@ -22,6 +22,8 @@ ActiveRecord::Schema.define(version: 20171014131654) do
     t.string "webpage"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "place_id"
+    t.index ["place_id"], name: "index_contacts_on_place_id"
   end
 
   create_table "places", force: :cascade do |t|
@@ -35,7 +37,27 @@ ActiveRecord::Schema.define(version: 20171014131654) do
     t.datetime "updated_at", null: false
     t.boolean "indoor"
     t.integer "category_id"
+    t.integer "visiting_time_id"
     t.index ["category_id"], name: "index_places_on_category_id"
+    t.index ["visiting_time_id"], name: "index_places_on_visiting_time_id"
+  end
+
+  create_table "visiting_times", force: :cascade do |t|
+    t.boolean "morning"
+    t.boolean "midday"
+    t.boolean "evening"
+    t.boolean "night"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "visiting_times", force: :cascade do |t|
+    t.boolean "morning"
+    t.boolean "midday"
+    t.boolean "evening"
+    t.boolean "night"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end
