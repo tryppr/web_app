@@ -30,6 +30,10 @@ function displayLoginField() {
   $('.login-image').toggleClass('hidden')
 }
 
+function displayMap() {
+    $('#map-holder').toggleClass('hidden')
+}
+
 $(function() {
   var availableTags = [
     "Berlin",
