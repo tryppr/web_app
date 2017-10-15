@@ -118,7 +118,7 @@ input {
   right: 0;
 }
 
-.go {
+.go, .display-map {
   background-color: #13a3d4;
   border: none;
   border-radius: 2px;
@@ -126,6 +126,13 @@ input {
   height: 100%;
   text-indent: 0;
   color: white;
+}
+.display-map {
+  height: 10%;
+  width: 50%;
+  margin: 6px;
+  font-size: 13px;
+  min-height: 20px;
 }
 
 ul {
@@ -135,7 +142,7 @@ ul {
   padding: 1% 5% 5%;
 }
 
-.lists-wrapper {
+.lists-wrapper, .bottom-wrapper {
   display: flex;
 }
 label {
@@ -169,6 +176,12 @@ li {
 }
 .orange {
   color: #f98562;
-  padding: 0;
+  padding: 2%;
   margin: 0;
+}
+
+#map {
+  margin: 2em;
+  width:570px;
+  height:500px;
 }
