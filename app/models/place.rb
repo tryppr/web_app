@@ -3,4 +3,8 @@ class Place < ApplicationRecord
 	belongs_to :category
 	has_one :contact
 	belongs_to :visiting_time
+
+	def position
+		"#{latitude},#{longitude}"
+	end
 end
