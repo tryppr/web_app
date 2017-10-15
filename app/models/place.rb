@@ -7,4 +7,5 @@ class Place < ApplicationRecord
 	def position
 		"#{latitude},#{longitude}"
 	end
+	
 end
