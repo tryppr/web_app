@@ -23,6 +23,7 @@ $(function() {
 
 $(document).ready(() => {
   $('.account-image').click(displayLoginField);
+  $('input').click(displayCheckboxValue);
 });
 
 function displayLoginField() {
@@ -38,3 +39,13 @@ $(function() {
     source: availableTags
   });
 });
+
+function displayCheckboxValue(e) {
+  if($('input[type=checkbox]:checked')) {
+    let list = `<li>
+                  <span class="checked-destinations">${e.target.value}</span>
+                </li>`;
+
+    $( ".choosen-destinations" ).append(list);
+  }
+}

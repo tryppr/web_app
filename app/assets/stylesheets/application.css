@@ -91,7 +91,7 @@ h4 {
 
 h3 {
   color: #007fb5;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 400;
   text-align: center;
 }
@@ -153,4 +153,22 @@ label {
 
 .nightlife {
   background-color: #007fb5;
+}
+li {
+  list-style-type: square;
+}
+.choosen-destinations {
+  color: #2a3e50;
+  border: 1px solid #2a3e50;
+  border-radius: 3px;
+  display: block;
+  width: 30%;
+  padding: 2%;
+  margin: 7%;
+  height: auto;
+}
+.orange {
+  color: #f98562;
+  padding: 0;
+  margin: 0;
 }
