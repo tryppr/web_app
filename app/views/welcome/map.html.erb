@@ -98,5 +98,31 @@
 
       <div id="map-holder" class="hidden"><div id="map"></div></div>
     </div>
+
+    <div>
+      <h3> Morning! </h3>
+      <ul>
+        <% @schedule[:morning_places].each do |place| %>
+          <li> 
+            <%= place.name %> (~<%= place.duration %> min)</li>
+        <% end %>
+      </ul>
+      <h3> Midday! </h3>
+      <ul>
+        <% @schedule[:midday_places].each do |place| %>
+          <li> 
+            <%= place.name %> (~<%= place.duration %> min)</li>
+        <% end %>
+      </ul>
+      <h3> Evening and Night! </h3>
+      <ul>
+        <% @schedule[:evening_places].each do |place| %>
+          <li> 
+            <%= place.name %> (<%= place.duration %> min)</li>
+        <% end %>
+      </ul>
+    </div>
+
   </div>
+
 </body>
