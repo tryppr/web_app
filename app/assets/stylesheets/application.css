@@ -42,6 +42,7 @@ header {
   background-size: cover;
   margin: 10px;
   position: relative;
+  cursor: pointer;
 }
 
 a {
@@ -83,6 +84,11 @@ h4 {
   justify-content: center;
   padding-top: 20%;
 }
+
+.hidden {
+  display: none;
+}
+
 h3 {
   color: #007fb5;
   font-size: 16px;
@@ -121,8 +127,30 @@ input {
   text-indent: 0;
   color: white;
 }
+
 ul {
   background-color: #f98562;
-  width: 20%;
-  padding: 5%;
+  width: 23%;
+  margin: auto;
+  padding: 1% 5% 5%;
+}
+
+.lists-wrapper {
+  display: flex;
+}
+label {
+  width: 200%;
+}
+.checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.shopping {
+  background-color: #13a3d4;
+}
+
+.nightlife {
+  background-color: #007fb5;
 }
