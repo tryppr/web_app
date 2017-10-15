@@ -136,12 +136,15 @@ input {
 }
 
 ul {
-  background-color: #f98562;
+  background-color: rgba(249, 133, 98, 0.78);
   width: 23%;
   margin: auto;
   padding: 1% 5% 5%;
+  position: relative;
 }
-
+h2 {
+    margin-left: 15%;
+}
 .lists-wrapper, .bottom-wrapper {
   display: flex;
 }
@@ -156,6 +159,34 @@ label {
 
 .shopping {
   background-color: #13a3d4;
+}
+.icon-culture {
+  background-image: url('culture.png');
+    height: 33px;
+    width: 24px;
+    background-size: cover;
+    position: absolute;
+    left: 15%;
+    top: 6%;
+}
+
+.icon-shopping {
+  background-image: url('shopping.png');
+    height: 33px;
+    width: 24px;
+    background-size: cover;
+    position: absolute;
+    left: 15%;
+    top: 6%;
+}
+.icon-nightlife {
+  background-image: url('nightlife.png');
+    height: 33px;
+    width: 24px;
+    background-size: cover;
+    position: absolute;
+    left: 15%;
+    top: 6%;
 }
 
 .nightlife {
