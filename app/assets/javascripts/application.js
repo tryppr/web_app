@@ -30,8 +30,8 @@ function displayLoginField() {
   $('.login-image').toggleClass('hidden')
 }
 
-function displayMap() {
-    $('#map-holder').toggleClass('hidden')
+function displaySchedule() {
+    $('.schedules').removeClass('hidden')
 }
 
 $(function() {
@@ -55,6 +55,7 @@ function displayCheckboxValue(e) {
   $( "#make-schedule" ).remove()
   $( ".choosen-destinations" ).append(`<button id="make-schedule" class="display-map">Make schedule!</button>`);
   $( "#make-schedule" ).click(initialize);
+  $( "#make-schedule" ).click(displaySchedule);
 }
 
 function initialize() {
