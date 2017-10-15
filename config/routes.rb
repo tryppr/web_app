@@ -8,4 +8,5 @@ Rails.application.routes.draw do
 
   get 'about' => 'welcome#about', as: 'about'
   post 'map' => 'welcome#map', as: 'map'
+  get 'map' => 'welcome#map', as: 'map1'
 end

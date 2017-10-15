@@ -16,26 +16,36 @@
 //= require react_ujs
 //= require components
 //= require_tree .
+
 $(function() {
   $( "#datepicker" ).datepicker();
 });
-//
-// document.addEventListener("DOMContentLoaded", () => {
-//   const searchInput = document.querySelector('.where');
-//   searchInput.addEventListener('change', showMatches);
-// });
-//
-// let movies = ['Berlin', 'London'];
-//
-// function findMatches(wordToMatch, movies) {
-//   if(wordToMatch === '') {
-//     return [];
-//   }
-//   const regex = new RegExp(`^${wordToMatch}`, 'gi');
-//   return movies.filter(movie => movie.title.match(regex));
-// }
-//
-// function showMatches(e) {
-//   console.log('aaaa')
-//   const matchArray = findMatches(e.target.value, movies);
-// }
+
+$(document).ready(() => {
+  $('.account-image').click(displayLoginField);
+  $('input').click(displayCheckboxValue);
+});
+
+function displayLoginField() {
+  $('.login-image').toggleClass('hidden')
+}
+
+$(function() {
+  var availableTags = [
+    "Berlin",
+    "London"
+  ];
+  $( ".where" ).autocomplete({
+    source: availableTags
+  });
+});
+
+function displayCheckboxValue(e) {
+  if($('input[type=checkbox]:checked')) {
+    let list = `<li>
+                  <span class="checked-destinations">${e.target.value}</span>
+                </li>`;
+
+    $( ".choosen-destinations" ).append(list);
+  }
+}
