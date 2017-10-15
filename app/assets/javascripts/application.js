@@ -30,10 +30,6 @@ function displayLoginField() {
   $('.login-image').toggleClass('hidden')
 }
 
-function displayMap() {
-    $('#map-holder').toggleClass('hidden')
-}
-
 $(function() {
   var availableTags = [
     "Berlin",
@@ -54,7 +50,7 @@ function displayCheckboxValue(e) {
   }
   $( "#make-schedule" ).remove()
   $( ".choosen-destinations" ).append(`<button id="make-schedule" class="display-map">Make schedule!</button>`);
-  $( "#make-schedule" ).click(displayMap);
+  $( "#make-schedule" ).click(initialize);
 }
 
 function initialize() {
